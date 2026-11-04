@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Planejador de Matrícula</title>
+<meta name="description" content="Planejador de Matrícula — Engenharia Mecânica UFTM. Importe seu histórico e veja a previsão até a formatura.">
+<link rel="icon" href="img/escudo.png">
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+<header class="cabecalho">
+  <img src="img/escudo.png" alt="" class="logo">
+  <div class="cab-textos">
+    <div class="app-titulo">Planejador de Matrícula</div>
+    <div class="app-sub" id="subtitulo">Engenharia Mecânica · UFTM</div>
+  </div>
+  <div class="cab-status" id="status" title="O planejador roda inteiramente no seu navegador">
+    <span class="girando"></span><span id="statusTexto">Preparando o planejador…</span>
+  </div>
+  <div class="cab-botoes">
+    <button id="btEditar" class="bt" hidden>✎ Editar situação</button>
+    <button id="btExportar" class="bt" hidden>⤓ Exportar plano</button>
+    <button id="btImportar" class="bt primario">📄 Importar histórico</button>
+  </div>
+  <input type="file" id="arquivo" accept="application/pdf,.pdf" hidden>
+</header>
+
+<main>
+  <!-- Tela inicial -->
+  <section id="boasVindas" class="pagina">
+    <div class="boas-vindas">
+      <h1>Planeje sua matrícula até a formatura</h1>
+      <p class="bv-texto">Importe o PDF do seu histórico escolar. O planejador identifica as disciplinas
+        que você já cursou, mostra o que pode cursar no próximo semestre e calcula a previsão até a formatura.</p>
+      <div class="etapas">
+        <div class="etapa"><span class="etapa-num">1</span><b>Importe o histórico</b><span>Arquivo PDF emitido pelo<br>sistema acadêmico.</span></div>
+        <div class="etapa"><span class="etapa-num">2</span><b>Confira sua situação</b><span>Ajuste aprovações e<br>escolha o semestre.</span></div>
+        <div class="etapa"><span class="etapa-num">3</span><b>Monte seu plano</b><span>Clique nas disciplinas e<br>veja a previsão.</span></div>
+      </div>
+      <button id="btImportar2" class="bt primario grande">📄 Importar histórico (PDF)</button>
+      <div class="dica">ou arraste o arquivo PDF para esta página</div>
+      <button id="btManual" class="link">Não tenho o PDF — preencher manualmente</button>
+      <div class="privacidade">🔒 Seu histórico é lido no seu próprio computador e <b>não é enviado</b> para nenhum servidor.</div>
+    </div>
+  </section>
+
+  <!-- Planejador -->
+  <section id="planejador" class="pagina" hidden>
+    <div class="linha-topo">
+      <div class="card" id="cardDisp">
+        <div class="card-topo">
+          <span class="passo">1</span>
+          <div class="card-textos">
+            <div class="card-titulo" id="tituloDisp">Disciplinas disponíveis</div>
+            <div class="card-sub">Clique numa disciplina para incluí-la no seu semestre · ★ = sugestão do planejador</div>
+          </div>
+          <button id="btSugestao" class="bt sugestao">★ Usar sugestão</button>
+        </div>
+        <div class="colunas" id="disponiveis"></div>
+      </div>
+      <div class="card" id="cardProx">
+        <div class="card-topo">
+          <span class="passo">2</span>
+          <div class="card-textos"><div class="card-titulo" id="tituloProx">Seu semestre</div></div>
+          <button class="bt mini" id="btGradeProx" title="Ver a grade horária do seu semestre de matrícula">▦ Grade</button>
+        </div>
+        <div class="creditos" id="creditosProx"></div>
+        <div class="medidor"><div id="medidorBarra"></div></div>
+        <div class="lista" id="proximo"></div>
+        <div class="card-rodape">
+          <span class="dica">Clique numa disciplina para removê-la</span>
+          <button id="btLimpar" class="bt">Limpar</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" id="cardFut">
+      <div class="card-topo">
+        <span class="passo">3</span>
+        <div class="card-textos">
+          <div class="card-titulo">Previsão até a formatura</div>
+          <div class="card-sub">Arraste disciplinas entre semestres (ou clique nelas) para ajustar · verde = pode, vermelho = não pode</div>
+        </div>
+        <div class="formatura" id="formatura" hidden></div>
+        <div class="controles">
+          <label class="caixa-sel" title="Usa as turmas cadastradas para que nenhum semestre do plano tenha choque de horário. Disciplinas sem horário cadastrado não são verificadas.">
+            <input type="checkbox" id="chkHorarios" checked><span>Evitar choque de horário</span>
+          </label>
+          <span class="card-sub">Máx. de disciplinas por semestre:</span>
+          <div class="segmentado" id="selMax"></div>
+        </div>
+      </div>
+      <div class="colunas" id="futuros"></div>
+      <div class="vazio" id="futVazio" hidden>
+        <p id="futVazioTexto"></p>
+        <button id="btSugestao2" class="bt sugestao">★ Usar sugestão do planejador</button>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="rodape">⚠ Os horários consideram a oferta de turmas cadastrada e podem mudar a cada semestre. Confira a oferta oficial antes de se matricular.</footer>
+
+<!-- Diálogo: situação -->
+<dialog id="dlgSituacao" class="dialogo">
+  <div class="dlg-corpo">
+    <h2>Confira sua situação</h2>
+    <p class="bv-texto">Verifique cada disciplina e corrija o que for preciso — basta clicar na situação correta.
+      Depois escolha o semestre em que você vai se matricular.</p>
+    <div id="sitAvisos"></div>
+    <div class="sit-linha">
+      <label><b>Semestre de matrícula:</b> <select id="sitSemestre" title="O regulamento permite até 4 semestres de afastamento."></select></label>
+      <span class="resumo" id="sitResumo"></span>
+    </div>
+    <div class="sit-lista" id="sitLista"></div>
+  </div>
+  <div class="dlg-botoes">
+    <span class="dica">“Rend. mín.” = reprovado com nota ≥ 4,0 (a partir de 2023): libera as disciplinas que a têm como pré-requisito.</span>
+    <button class="bt" id="sitCancelar">Cancelar</button>
+    <button class="bt primario" id="sitContinuar">Continuar →</button>
+  </div>
+</dialog>
+
+<!-- Diálogo: grade horária -->
+<dialog id="dlgGrade" class="dialogo largo">
+  <div class="dlg-corpo">
+    <h2 id="gradeTitulo">Grade horária</h2>
+    <p class="bv-texto" id="gradeSub"></p>
+    <div class="banner" id="gradeStatus"></div>
+    <div class="grade-corpo">
+      <div class="grade" id="gradeTabela"></div>
+      <div class="grade-lista">
+        <div class="card-titulo">Disciplinas e turmas</div>
+        <div id="gradeTurmas"></div>
+      </div>
+    </div>
+  </div>
+  <div class="dlg-botoes">
+    <span class="dica">As turmas estão numeradas na ordem da planilha de oferta. Os horários podem mudar a cada semestre.</span>
+    <button class="bt" id="gradeImprimir">Imprimir / salvar PDF</button>
+    <button class="bt primario" id="gradeFechar">Fechar</button>
+  </div>
+</dialog>
+
+<!-- Diálogo: exportar -->
+<dialog id="dlgExportar" class="dialogo pequeno">
+  <div class="dlg-corpo">
+    <h2>Exportar planejamento</h2>
+    <p class="bv-texto">Escolha o formato:</p>
+    <button class="bt opcao" id="expPdf">🖨 Imprimir / salvar como PDF</button>
+    <button class="bt opcao" id="expCsv">📊 Planilha (CSV, abre no Excel)</button>
+  </div>
+  <div class="dlg-botoes"><button class="bt" id="expFechar">Fechar</button></div>
+</dialog>
+
+<!-- Menu: mover disciplina (alternativa ao arrastar, funciona no celular) -->
+<div class="menu" id="menuMover" hidden></div>
+
+<div class="aviso" id="aviso" hidden></div>
+<div class="espera" id="espera" hidden><div class="espera-caixa"><div class="girando grande"></div><div id="esperaTexto"></div></div></div>
+<div id="relatorio" class="relatorio"></div>
+
+<script src="app.js"></script>
+</body>
+</html>
