@@ -277,11 +277,13 @@ def grade(indice):
     for d in com:
         turmas = []
         for i, t in enumerate(CURSO.turmas_de(d, paridade)):
-            turmas.append({'rotulo': f'Turma {i + 1}  ·  {CURSO.descrever_turma(t)}',
+            turmas.append({'rotulo': f'{CURSO.rotulo_turma(d, paridade, i)}  ·  {CURSO.descrever_turma(t)}',
+                           'codigo': CURSO.rotulo_turma(d, paridade, i),
                            'celulas': [list(CURSO.dia_aula(h)) for h in t]})
         itens.append({'nome': d, 'titulo': nome_exibicao(d), 'turmas': turmas,
                       'escolhida': inicial.get(d, 0)})
     return {'semestre': nome, 'paridade': paridade, 'com_turma': itens,
+            'n_aulas': CURSO.aulas_exibidas(com, paridade),
             'sem_turma': [nome_exibicao(d) for d in sem]}
 
 

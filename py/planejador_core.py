@@ -96,6 +96,10 @@ class Curso:
         self.turmas = {1: {}, 2: {}}
         for paridade, por_disc in dados.get('turmas', {}).items():
             self.turmas[int(paridade)] = {n: [list(t) for t in ts] for n, ts in por_disc.items() if ts}
+        # códigos das turmas (ex.: "T01 - P02"), na mesma ordem de self.turmas
+        self.turmas_rotulos = {1: {}, 2: {}}
+        for paridade, por_disc in dados.get('turmas_rotulos', {}).items():
+            self.turmas_rotulos[int(paridade)] = dict(por_disc)
         self._mascaras = {p: {n: [sum(1 << h for h in t) for t in ts] for n, ts in por.items()}
                           for p, por in self.turmas.items()}
 
@@ -125,6 +129,24 @@ class Curso:
         if self._tem_relogio(ini) and self._tem_relogio(fim):
             return f'{self.horarios_aulas[ini][0]}–{self.horarios_aulas[fim][1]}'
         return f'{ini + 1}ª' if ini == fim else f'{ini + 1}ª–{fim + 1}ª'
+
+    def rotulo_turma(self, nome, paridade, indice):
+        """Código da turma (ex.: 'T01 - P02') ou 'Turma N' se não houver."""
+        rot = self.turmas_rotulos.get(paridade, {}).get(nome, [])
+        if indice < len(rot) and rot[indice]:
+            return rot[indice]
+        return f'Turma {indice + 1}'
+
+    def aulas_exibidas(self, disciplinas, paridade):
+        """Quantas linhas (aulas) a grade deve mostrar: as diurnas e, se alguma
+        turma das disciplinas tiver aula à noite, também as noturnas."""
+        ultima = 0
+        for d in disciplinas:
+            for t in self.turmas_de(d, paridade) or []:
+                for h in t:
+                    ultima = max(ultima, self.dia_aula(h)[1] + 1)
+        diurnas = min(12, self.aulas_por_dia)
+        return max(diurnas, ultima)
 
     def descrever_turma(self, horarios):
         """Ex.: 'Ter 07:10–08:50, Qui 07:10–08:50'."""

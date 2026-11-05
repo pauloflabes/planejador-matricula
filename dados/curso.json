@@ -245,17 +245,11 @@
    "creditos": 4,
    "oferta": [
     0,
-    1,
     2,
-    3,
     4,
-    5,
     6,
-    7,
     8,
-    9,
-    10,
-    11
+    10
    ],
    "pre": [],
    "co": []
@@ -267,11 +261,17 @@
    "creditos": 4,
    "oferta": [
     0,
+    1,
     2,
+    3,
     4,
+    5,
     6,
+    7,
     8,
-    10
+    9,
+    10,
+    11
    ],
    "pre": [],
    "co": [
@@ -458,10 +458,15 @@
    "oferta": [
     0,
     1,
+    2,
     3,
+    4,
     5,
+    6,
     7,
+    8,
     9,
+    10,
     11
    ],
    "pre": [
@@ -729,10 +734,15 @@
    "oferta": [
     0,
     1,
+    2,
     3,
+    4,
     5,
+    6,
     7,
+    8,
     9,
+    10,
     11
    ],
    "pre": [
@@ -829,11 +839,17 @@
    "creditos": 4,
    "oferta": [
     0,
+    1,
     2,
+    3,
     4,
+    5,
     6,
+    7,
     8,
-    10
+    9,
+    10,
+    11
    ],
    "pre": [
     32
@@ -957,11 +973,17 @@
    "creditos": 4,
    "oferta": [
     0,
+    1,
     2,
+    3,
     4,
+    5,
     6,
+    7,
     8,
-    10
+    9,
+    10,
+    11
    ],
    "pre": [
     35
@@ -1034,10 +1056,15 @@
    "oferta": [
     0,
     1,
+    2,
     3,
+    4,
     5,
+    6,
     7,
+    8,
     9,
+    10,
     11
    ],
    "pre": [
@@ -1055,10 +1082,15 @@
    "oferta": [
     0,
     1,
+    2,
     3,
+    4,
     5,
+    6,
     7,
+    8,
     9,
+    10,
     11
    ],
    "pre": [
@@ -1143,11 +1175,17 @@
    "creditos": 4,
    "oferta": [
     0,
+    1,
     2,
+    3,
     4,
+    5,
     6,
+    7,
     8,
-    10
+    9,
+    10,
+    11
    ],
    "pre": [],
    "co": [
@@ -1179,11 +1217,17 @@
    "creditos": 4,
    "oferta": [
     0,
+    1,
     2,
+    3,
     4,
+    5,
     6,
+    7,
     8,
-    10
+    9,
+    10,
+    11
    ],
    "pre": [],
    "co": [
@@ -1221,11 +1265,17 @@
    "creditos": 4,
    "oferta": [
     0,
+    1,
     2,
+    3,
     4,
+    5,
     6,
+    7,
     8,
-    10
+    9,
+    10,
+    11
    ],
    "pre": [
     23,
@@ -1694,300 +1744,96 @@
  },
  "turmas": {
   "1": {
-   "FUNDAMENTOS DE MATEMÁTICA": [
+   "ADMINISTRAÇÃO E ORGANIZAÇÃO": [
     [
-     13,
-     14,
-     37,
-     38
-    ]
-   ],
-   "DESENHO TÉCNICO": [
-    [
-     15,
-     16,
-     39,
-     40
-    ],
-    [
-     3,
-     4,
      27,
-     28
-    ]
-   ],
-   "GEOMETRIA ANALÍTICA": [
-    [
-     17,
-     18,
-     41,
-     42
+     28,
+     59,
+     60
     ],
     [
-     13,
-     14,
-     37,
-     38
-    ],
-    [
-     15,
-     16,
-     39,
-     40
-    ]
-   ],
-   "INTRODUÇÃO ÀS ENGENHARIAS": [
-    [
-     29,
-     30
-    ]
-   ],
-   "INTRODUÇÃO AOS PROJETOS MECÂNICOS": [
-    [
-     52,
-     53
-    ]
-   ],
-   "QUÍMICA PARA ENGENHARIA": [
-    [
-     1,
-     2,
      25,
-     26
-    ]
-   ],
-   "MEIO AMBIENTE E SOCIEDADE": [
-    [
-     49,
-     50,
-     51
-    ],
-    [
-     55,
-     56,
-     57
-    ]
-   ],
-   "DESENHO DE MÁQUINAS": [
-    [
-     3,
-     4,
-     27,
-     28
+     26,
+     57,
+     58
     ]
    ],
    "ÁLGEBRA LINEAR": [
     [
-     1,
-     2,
-     25,
-     26
-    ],
-    [
-     3,
-     4,
      27,
-     28
+     28,
+     59,
+     60
     ],
-    [
-     5,
-     6,
-     29,
-     30
-    ]
-   ],
-   "CÁLCULO II": [
-    [
-     7,
-     8,
-     31,
-     32
-    ]
-   ],
-   "SÉRIES E EQUAÇÕES DIFERENCIAIS": [
-    [
-     9,
-     10,
-     33,
-     34
-    ]
-   ],
-   "INTRODUÇÃO À CIÊNCIA DOS MATERIAIS": [
-    [
-     55,
-     56,
-     57
-    ]
-   ],
-   "ESTÁTICA": [
-    [
-     21,
-     22,
-     45,
-     46
-    ]
-   ],
-   "SOLUÇÃO NUMÉRICA DE PROBLEMAS EM ENGENHARIA": [
     [
      23,
      24,
-     47,
-     48
-    ]
-   ],
-   "METODOLOGIA CIENTÍFICA": [
+     55,
+     56
+    ],
     [
      25,
-     26
-    ],
-    [
-     27,
-     28
-    ],
-    [
-     29,
-     30
+     26,
+     57,
+     58
     ]
    ],
-   "LÓGICA COMPUTACIONAL": [
+   "AUTOMAÇÃO": [
     [
-     11,
-     12,
      35,
-     36
+     36,
+     37,
+     55
+    ],
+    [
+     35,
+     36,
+     37,
+     56
+    ],
+    [
+     35,
+     36,
+     37,
+     57
     ]
    ],
-   "MÉTODOS MATEMÁTICOS PARA EQUAÇÕES DIFERENCIAIS": [
+   "CÁLCULO I": [
+    [
+     17,
+     18,
+     49,
+     50
+    ],
     [
      19,
      20,
-     43,
-     44
+     51,
+     52
     ],
     [
      21,
      22,
-     45,
-     46
-    ]
-   ],
-   "TERMODINÂMICA": [
-    [
-     29,
-     30,
      53,
      54
     ]
    ],
-   "PROJETO INTEGRADOR EM RESOLVER PROBLEMAS": [
+   "CÁLCULO II": [
     [
-     27,
-     28
-    ]
-   ],
-   "FÍSICA III": [
-    [
-     13,
-     14,
-     37,
-     38
-    ]
-   ],
-   "LABORATÓRIO DE FÍSICA II": [
-    [
-     7,
-     8
-    ]
-   ],
-   "MECÂNICA DOS FLUÍDOS": [
-    [
-     1,
-     2,
-     25,
-     26
-    ]
-   ],
-   "LABORATÓRIO DE MECÂNICA DOS FLUÍDOS": [
-    [
-     31,
-     32
-    ],
-    [
-     33,
-     34
-    ],
-    [
-     35,
-     36
-    ]
-   ],
-   "MICROESTRUTURA E TRATAMENTO TÉRMICO DOS METAIS": [
-    [
-     44,
-     49,
-     50,
-     51
-    ],
-    [
-     45,
-     49,
-     50,
-     51
-    ],
-    [
-     46,
-     49,
-     50,
-     51
-    ],
-    [
-     47,
-     49,
-     50,
-     51
-    ]
-   ],
-   "SISTEMAS TÉRMICOS": [
-    [
-     15,
-     16,
-     39,
-     40
-    ]
-   ],
-   "MÁQUINAS TÉRMICAS II": [
-    [
-     19,
-     20,
-     43,
-     44
-    ]
-   ],
-   "MECANISMOS MULTICORPOS": [
-    [
-     31,
-     32,
-     33,
-     55,
-     56,
-     57
-    ]
-   ],
-   "VIBRAÇÃO EM SISTEMAS MECÂNICOS": [
-    [
-     7,
-     8,
      9,
-     29
+     10,
+     41,
+     42
     ],
     [
-     7,
-     8,
-     9,
-     30
-    ],
+     17,
+     18,
+     49,
+     50
+    ]
+   ],
+   "CÁLCULO VETORIAL": [
     [
-     5,
      7,
      8,
      9
@@ -1995,199 +1841,10 @@
    ],
    "CONFORMAÇÃO MECÂNICA": [
     [
-     21,
-     22,
-     45,
-     46
-    ]
-   ],
-   "PROCESSOS DE FABRICAÇÃO POR USINAGEM": [
-    [
-     10,
-     11,
-     12,
-     51
-    ],
-    [
-     10,
-     11,
-     12,
-     52
-    ],
-    [
-     10,
-     11,
-     12,
-     53
-    ]
-   ],
-   "REFRIGERAÇÃO E CONDICIONAMENTO DE AR": [
-    [
-     34,
-     35,
-     49,
-     50
-    ],
-    [
-     34,
-     35,
-     51,
-     52
-    ]
-   ],
-   "ADMINISTRAÇÃO E ORGANIZAÇÃO": [
-    [
-     23,
-     24,
-     47,
-     48
-    ]
-   ],
-   "PLANEJAMENTO DE PROCESSOS DE FABRICAÇÃO": [
-    [
-     17,
-     18,
-     41,
-     42
-    ]
-   ],
-   "PROJETO INTEGRADOR EM SISTEMAS MECÂNICOS": [
-    [
-     29,
-     30
-    ]
-   ],
-   "PROJETO INTEGRADOR EM PROCESSOS DE FABRICAÇÃO": [
-    [
-     5,
-     6
-    ]
-   ],
-   "AUTOMAÇÃO": [
-    [
-     26,
-     27,
-     28,
-     43
-    ],
-    [
-     26,
-     27,
-     28,
-     44
-    ],
-    [
-     26,
-     27,
-     28,
-     45
-    ]
-   ],
-   "ERGONOMIA E SEGURANÇA DO TRABALHO": [
-    [
-     13,
-     14,
-     37,
-     38
-    ]
-   ],
-   "MANUTENÇÃO MECÂNICA": [
-    [
-     2,
-     3,
-     4,
-     17,
-     18
-    ],
-    [
-     2,
-     3,
-     4,
-     29,
-     30
-    ]
-   ]
-  },
-  "2": {
-   "ADMINISTRAÇÃO E ORGANIZAÇÃO": [
-    [
-     21,
-     22,
-     45,
-     46
-    ],
-    [
-     17,
-     18,
-     41,
-     42
-    ]
-   ],
-   "ÁLGEBRA LINEAR": [
-    [
-     1,
-     2,
      25,
-     26
-    ],
-    [
-     3,
-     4,
-     27,
-     28
-    ],
-    [
-     5,
-     6,
-     29,
-     30
-    ]
-   ],
-   "CÁLCULO I": [
-    [
-     13,
-     14,
-     37,
-     38
-    ]
-   ],
-   "CÁLCULO II": [
-    [
-     13,
-     14,
-     37,
-     38
-    ],
-    [
-     17,
-     18,
-     41,
-     42
-    ]
-   ],
-   "CÁLCULO VETORIAL": [
-    [
-     19,
-     20,
-     21
-    ]
-   ],
-   "CINEMÁTICA": [
-    [
-     23,
-     24,
-     47,
-     48
-    ]
-   ],
-   "COMPORTAMENTO MECÂNICO DOS MATERIAIS": [
-    [
-     16,
-     17,
-     18,
-     40,
-     41,
-     42
+     26,
+     57,
+     58
     ]
    ],
    "CONTROLE DE SISTEMAS DINÂMICOS": [
@@ -2198,7 +1855,7 @@
      9
     ],
     [
-     4,
+     5,
      7,
      8,
      9
@@ -2207,298 +1864,1026 @@
      7,
      8,
      9,
-     15
-    ],
-    [
-     7,
-     8,
-     9,
-     16
+     10
     ]
    ],
    "DESENHO DE MÁQUINAS": [
     [
-     17,
-     18,
-     41,
-     42
+     19,
+     20,
+     51,
+     52
     ]
    ],
    "DESENHO TÉCNICO": [
     [
-     7,
-     8,
-     31,
-     32
-    ]
-   ],
-   "ELEMENTOS DE MÁQUINAS": [
-    [
      19,
      20,
-     43,
-     44
-    ]
-   ],
-   "ENGENHARIA ECONÔMICA E GESTÃO DE PROJETOS": [
-    [
-     21,
-     22,
-     45,
-     46
-    ]
-   ],
-   "FABRICAÇÃO ASSISTIDA POR COMPUTADOR": [
-    [
-     31,
-     32,
-     33,
-     38
-    ],
-    [
-     31,
-     32,
-     33,
-     39
-    ],
-    [
-     31,
-     32,
-     33,
-     40
-    ]
-   ],
-   "FÍSICA I": [
-    [
-     17,
-     18,
-     41,
-     42
+     51,
+     52
     ],
     [
      3,
      4,
-     27,
-     28
-    ],
-    [
-     5,
-     6,
-     29,
-     30
-    ],
-    [
-     15,
-     16,
-     39,
-     40
-    ]
-   ],
-   "FÍSICA II": [
-    [
-     9,
-     10,
-     33,
-     34
-    ],
-    [
-     11,
-     12,
      35,
      36
     ]
    ],
-   "FÍSICA III": [
+   "DINÂMICA": [
+    [
+     21,
+     22,
+     53,
+     54
+    ]
+   ],
+   "ELEMENTOS DE MÁQUINAS": [
+    [
+     61,
+     62,
+     63,
+     64
+    ]
+   ],
+   "ERGONOMIA E SEGURANÇA DO TRABALHO": [
+    [
+     17,
+     18,
+     49,
+     50
+    ]
+   ],
+   "ESTÁTICA": [
+    [
+     25,
+     26,
+     57,
+     58
+    ]
+   ],
+   "FÍSICA I": [
     [
      7,
      8,
-     31,
-     32
+     39,
+     40
     ],
     [
      19,
      20,
-     43,
-     44
+     51,
+     52
     ],
     [
      21,
      22,
-     45,
-     46
+     53,
+     54
+    ]
+   ],
+   "FÍSICA II": [
+    [
+     23,
+     24,
+     55,
+     56
     ],
     [
-     9,
-     10,
-     33,
-     34
+     25,
+     26,
+     57,
+     58
+    ]
+   ],
+   "FÍSICA III": [
+    [
+     23,
+     24,
+     55,
+     56
+    ],
+    [
+     3,
+     4,
+     35,
+     36
+    ],
+    [
+     5,
+     6,
+     37,
+     38
     ]
    ],
    "FUNDAMENTOS DE MATEMÁTICA": [
     [
-     15,
-     16,
-     39,
-     40
-    ],
-    [
      17,
      18,
-     41,
-     42
+     49,
+     50
+    ],
+    [
+     19,
+     20,
+     51,
+     52
     ]
    ],
    "FUNDIÇÃO E SOLDAGEM": [
     [
-     34,
-     35,
-     36,
-     39
-    ],
-    [
-     34,
-     35,
-     36,
-     40
-    ],
-    [
-     34,
-     35,
-     36,
-     41
+     29,
+     30,
+     31,
+     32
     ]
    ],
    "GEOMETRIA ANALÍTICA": [
     [
+     21,
+     22,
+     53,
+     54
+    ],
+    [
      17,
      18,
-     41,
-     42
+     49,
+     50
     ],
     [
-     13,
-     14,
-     37,
-     38
-    ],
-    [
-     7,
-     8,
-     31,
-     32
-    ],
-    [
-     9,
-     10,
-     33,
-     34
-    ]
-   ],
-   "INSTRUMENTAÇÃO": [
-    [
-     8,
-     25,
-     26,
-     27
-    ],
-    [
-     9,
-     25,
-     26,
-     27
-    ],
-    [
-     25,
-     26,
-     27,
-     32
+     19,
+     20,
+     51,
+     52
     ]
    ],
    "INTRODUÇÃO À CIÊNCIA DOS MATERIAIS": [
     [
+     49,
+     50,
+     51
+    ],
+    [
+     33,
+     34,
+     35
+    ]
+   ],
+   "INTRODUÇÃO AOS PROJETOS MECÂNICOS": [
+    [
+     68,
+     69
+    ]
+   ],
+   "INTRODUÇÃO ÀS ENGENHARIAS": [
+    [
      37,
-     38,
-     39
-    ],
-    [
-     15,
-     16,
-     17
-    ],
-    [
-     25,
-     26,
-     27
+     38
     ]
    ],
    "LABORATÓRIO DE FÍSICA I": [
     [
-     15,
-     16
+     5,
+     6
     ],
     [
-     3,
-     4
+     37,
+     38
+    ],
+    [
+     51,
+     52
     ]
    ],
    "LABORATÓRIO DE FÍSICA II": [
+    [
+     59,
+     60
+    ],
+    [
+     27,
+     28
+    ],
+    [
+     9,
+     10
+    ]
+   ],
+   "LABORATÓRIO DE MECÂNICA DOS FLUÍDOS": [
     [
      39,
      40
     ],
     [
-     35,
-     36
+     41,
+     42
+    ],
+    [
+     43,
+     44
     ]
    ],
    "LABORATÓRIO DE QUÍMICA": [
     [
-     11,
-     12
+     7,
+     8
     ],
     [
      9,
      10
     ],
     [
-     35,
-     36
+     11,
+     12
     ]
    ],
-   "LABORATÓRIO DE RESISTÊNCIA DOS MATERIAIS": [
+   "MANUTENÇÃO MECÂNICA": [
     [
-     28,
-     29,
-     30
+     2,
+     3,
+     4,
+     21
     ],
     [
-     28,
+     2,
+     3,
+     4,
+     22
+    ],
+    [
+     2,
+     3,
+     4,
+     19
+    ],
+    [
+     2,
+     3,
+     4,
+     20
+    ]
+   ],
+   "MÁQUINAS TÉRMICAS II": [
+    [
+     23,
+     24,
+     55,
+     56
+    ]
+   ],
+   "MECÂNICA DOS FLUÍDOS": [
+    [
+     1,
+     2,
+     33,
+     34
+    ]
+   ],
+   "MECANISMOS MULTICORPOS": [
+    [
+     39,
+     40,
+     41,
+     71,
+     72,
+     73
+    ]
+   ],
+   "MEIO AMBIENTE E SOCIEDADE": [
+    [
+     65,
+     66,
+     67
+    ],
+    [
+     25,
+     26,
+     27
+    ]
+   ],
+   "METODOLOGIA CIENTÍFICA": [
+    [
+     55,
+     56
+    ]
+   ],
+   "MÉTODOS MATEMÁTICOS PARA EQUAÇÕES DIFERENCIAIS": [
+    [
+     9,
+     10,
+     41,
+     42
+    ],
+    [
+     11,
+     12,
+     43,
+     44
+    ]
+   ],
+   "METROLOGIA": [
+    [
+     21,
+     22,
+     51,
+     52
+    ],
+    [
+     21,
+     22,
+     53,
+     54
+    ]
+   ],
+   "MICROESTRUTURA E TRATAMENTO TÉRMICO DOS METAIS": [
+    [
+     55,
+     65,
+     66,
+     67
+    ],
+    [
+     56,
+     65,
+     66,
+     67
+    ],
+    [
+     57,
+     65,
+     66,
+     67
+    ],
+    [
+     58,
+     65,
+     66,
+     67
+    ],
+    [
+     59,
+     65,
+     66,
+     67
+    ]
+   ],
+   "PLANEJAMENTO DE PROCESSOS DE FABRICAÇÃO": [
+    [
+     21,
+     22,
+     53,
+     54
+    ]
+   ],
+   "PROBABILIDADE E ESTATÍSTICA PARA ENGENHARIA": [
+    [
+     23,
+     24,
+     55,
+     56,
+     71,
+     72
+    ],
+    [
+     21,
+     22,
+     53,
+     54,
+     69,
+     70
+    ],
+    [
+     19,
+     20,
+     51,
+     52,
+     67,
+     68
+    ]
+   ],
+   "PROCESSOS DE FABRICAÇÃO POR USINAGEM": [
+    [
+     10,
+     11,
+     12,
+     66
+    ],
+    [
+     10,
+     11,
+     12,
+     67
+    ],
+    [
+     10,
+     11,
+     12,
+     68
+    ]
+   ],
+   "PROJETO FINAL DE CURSO I": [],
+   "PROJETO FINAL DE CURSO II": [],
+   "PROJETO INTEGRADOR EM PROCESSOS DE FABRICAÇÃO": [
+    [
+     5,
+     6
+    ]
+   ],
+   "PROJETO INTEGRADOR EM RESOLVER PROBLEMAS": [
+    [
+     5,
+     6
+    ],
+    [
      37,
      38
+    ]
+   ],
+   "PROJETO INTEGRADOR EM SISTEMAS MECÂNICOS": [
+    [
+     53,
+     54
     ],
     [
-     28,
+     69,
+     70
+    ]
+   ],
+   "PROJETO INTEGRADOR EM SISTEMAS TÉRMICOS": [
+    [
+     33,
+     34
+    ]
+   ],
+   "QUÍMICA PARA ENGENHARIA": [
+    [
+     1,
+     2,
+     33,
+     34
+    ],
+    [
+     7,
+     8,
+     39,
+     40
+    ]
+   ],
+   "REFRIGERAÇÃO E CONDICIONAMENTO DE AR": [
+    [
+     42,
+     43,
+     49,
+     50
+    ],
+    [
+     42,
+     43,
+     51,
+     52
+    ],
+    [
+     42,
+     43,
+     53,
+     54
+    ]
+   ],
+   "SÉRIES E EQUAÇÕES DIFERENCIAIS": [
+    [
+     11,
+     12,
+     43,
+     44
+    ],
+    [
+     7,
+     8,
      39,
      40
     ],
     [
-     28,
+     9,
+     10,
      41,
      42
     ]
    ],
-   "LABORATÓRIO DE TRANSFERÊNCIA DE CALOR": [
+   "SISTEMAS TÉRMICOS": [
+    [
+     19,
+     20,
+     51,
+     52
+    ]
+   ],
+   "SOLUÇÃO NUMÉRICA DE PROBLEMAS EM ENGENHARIA": [
     [
      27,
-     28
+     28,
+     59,
+     60
+    ],
+    [
+     19,
+     20,
+     51,
+     52
+    ],
+    [
+     21,
+     22,
+     53,
+     54
+    ]
+   ],
+   "TERMODINÂMICA": [
+    [
+     39,
+     40,
+     71,
+     72
+    ]
+   ],
+   "TRANSFERÊNCIA DE CALOR": [
+    [
+     13,
+     14,
+     15,
+     16
+    ]
+   ],
+   "USINAGEM DOS MATERIAIS": [
+    [
+     52,
+     53,
+     54,
+     71
+    ],
+    [
+     52,
+     53,
+     54,
+     72
+    ]
+   ],
+   "VIBRAÇÃO EM SISTEMAS MECÂNICOS": [
+    [
+     7,
+     8,
+     9,
+     37
+    ],
+    [
+     7,
+     8,
+     9,
+     38
+    ],
+    [
+     5,
+     7,
+     8,
+     9
+    ]
+   ]
+  },
+  "2": {
+   "ADMINISTRAÇÃO E ORGANIZAÇÃO": [
+    [
+     19,
+     20,
+     51,
+     52
+    ],
+    [
+     21,
+     22,
+     53,
+     54
+    ]
+   ],
+   "ÁLGEBRA LINEAR": [
+    [
+     19,
+     20,
+     51,
+     52
+    ],
+    [
+     5,
+     6,
+     37,
+     38
+    ],
+    [
+     3,
+     4,
+     35,
+     36
+    ],
+    [
+     1,
+     2,
+     33,
+     34
+    ]
+   ],
+   "CÁLCULO I": [
+    [
+     21,
+     22,
+     53,
+     54
+    ],
+    [
+     19,
+     20,
+     51,
+     52
+    ],
+    [
+     17,
+     18,
+     49,
+     50
+    ]
+   ],
+   "CÁLCULO II": [
+    [
+     17,
+     18,
+     49,
+     50
+    ],
+    [
+     19,
+     20,
+     51,
+     52
+    ],
+    [
+     21,
+     22,
+     53,
+     54
+    ],
+    [
+     7,
+     8,
+     39,
+     40
+    ]
+   ],
+   "CÁLCULO VETORIAL": [
+    [
+     23,
+     24,
+     25
+    ]
+   ],
+   "CINEMÁTICA": [
+    [
+     27,
+     28,
+     59,
+     60
+    ]
+   ],
+   "COMPORTAMENTO MECÂNICO DOS MATERIAIS": [
+    [
+     20,
+     21,
+     22,
+     52,
+     53,
+     54
+    ]
+   ],
+   "CONFORMAÇÃO MECÂNICA": [
+    [
+     29,
+     30,
+     31,
+     32
+    ]
+   ],
+   "CONTROLE DE SISTEMAS DINÂMICOS": [
+    [
+     2,
+     7,
+     8,
+     9
+    ],
+    [
+     3,
+     7,
+     8,
+     9
+    ],
+    [
+     4,
+     7,
+     8,
+     9
+    ],
+    [
+     5,
+     7,
+     8,
+     9
+    ]
+   ],
+   "DESENHO DE MÁQUINAS": [
+    [
+     21,
+     22,
+     53,
+     54
+    ]
+   ],
+   "DESENHO TÉCNICO": [
+    [
+     7,
+     8,
+     39,
+     40
+    ],
+    [
+     9,
+     10,
+     41,
+     42
+    ]
+   ],
+   "ELEMENTOS DE MÁQUINAS": [
+    [
+     25,
+     26,
+     57,
+     58
+    ]
+   ],
+   "ENGENHARIA ECONÔMICA E GESTÃO DE PROJETOS": [
+    [
+     23,
+     24,
+     55,
+     56
+    ]
+   ],
+   "ESTÁTICA": [
+    [
+     25,
+     26,
+     57,
+     58
+    ]
+   ],
+   "FABRICAÇÃO ASSISTIDA POR COMPUTADOR": [
+    [
+     34,
+     39,
+     40,
+     41
+    ],
+    [
+     35,
+     39,
+     40,
+     41
+    ],
+    [
+     36,
+     39,
+     40,
+     41
+    ]
+   ],
+   "FÍSICA I": [
+    [
+     19,
+     20,
+     51,
+     52
+    ],
+    [
+     9,
+     10,
+     41,
+     42
+    ],
+    [
+     11,
+     12,
+     43,
+     44
+    ],
+    [
+     21,
+     22,
+     53,
+     54
+    ]
+   ],
+   "FÍSICA II": [
+    [
+     9,
+     10,
+     41,
+     42
+    ],
+    [
+     7,
+     8,
+     39,
+     40
+    ]
+   ],
+   "FÍSICA III": [
+    [
+     23,
+     24,
+     55,
+     56
+    ],
+    [
+     19,
+     20,
+     51,
+     52
+    ],
+    [
+     21,
+     22,
+     53,
+     54
+    ]
+   ],
+   "FUNDAMENTOS DE MATEMÁTICA": [
+    [
+     17,
+     18,
+     49,
+     50
+    ],
+    [
+     21,
+     22,
+     53,
+     54
+    ]
+   ],
+   "FUNDIÇÃO E SOLDAGEM": [
+    [
+     42,
+     43,
+     44,
+     68,
+     69
+    ]
+   ],
+   "GEOMETRIA ANALÍTICA": [
+    [
+     19,
+     20,
+     51,
+     52
+    ],
+    [
+     17,
+     18,
+     49,
+     50
+    ],
+    [
+     21,
+     22,
+     53,
+     54
+    ],
+    [
+     9,
+     10,
+     41,
+     42
+    ]
+   ],
+   "INSTRUMENTAÇÃO": [
+    [
+     8,
+     68,
+     69,
+     70
+    ],
+    [
+     9,
+     68,
+     69,
+     70
+    ],
+    [
+     10,
+     68,
+     69,
+     70
+    ]
+   ],
+   "INTRODUÇÃO À CIÊNCIA DOS MATERIAIS": [
+    [
+     3,
+     4,
+     5
+    ],
+    [
+     7,
+     8,
+     9
+    ],
+    [
+     33,
+     34,
+     35
+    ],
+    [
+     49,
+     50,
+     51
+    ]
+   ],
+   "LABORATÓRIO DE FÍSICA I": [
+    [
+     19,
+     20
+    ],
+    [
+     41,
+     42
+    ]
+   ],
+   "LABORATÓRIO DE FÍSICA II": [
+    [
+     25,
+     26
+    ]
+   ],
+   "LABORATÓRIO DE QUÍMICA": [
+    [
+     9,
+     10
+    ],
+    [
+     11,
+     12
+    ]
+   ],
+   "LABORATÓRIO DE RESISTÊNCIA DOS MATERIAIS": [
+    [
+     35,
+     36,
+     37
+    ],
+    [
+     35,
+     49,
+     50
+    ],
+    [
+     35,
+     51,
+     52
+    ],
+    [
+     35,
+     53,
+     54
+    ],
+    [
+     35,
+     65,
+     66
+    ]
+   ],
+   "LABORATÓRIO DE TRANSFERÊNCIA DE CALOR": [
+    [
+     39,
+     40
+    ],
+    [
+     41,
+     42
+    ],
+    [
+     36,
+     37
     ]
    ],
    "LÓGICA COMPUTACIONAL": [
     [
      5,
      6,
-     29,
-     30
+     37,
+     38
     ]
    ],
    "MÁQUINAS DE FLUXO": [
@@ -2506,260 +2891,725 @@
      1,
      2,
      3,
-     20
+     24
     ],
     [
      1,
      2,
      3,
-     21
+     25
     ],
     [
      1,
      2,
      3,
-     22
-    ],
-    [
-     1,
-     2,
-     3,
-     23
+     26
     ]
    ],
    "MÁQUINAS TÉRMICAS I": [
     [
      4,
      5,
-     28,
-     29
+     36,
+     37
     ]
    ],
    "MATERIAIS APLICADOS À ENGENHARIA": [
     [
-     52,
-     53
+     33,
+     34
+    ]
+   ],
+   "MECÂNICA DOS FLUÍDOS": [
+    [
+     13,
+     14,
+     15,
+     16
     ]
    ],
    "MEIO AMBIENTE E SOCIEDADE": [
     [
-     50,
-     51,
-     52
+     71,
+     72,
+     73
     ]
    ],
    "METODOLOGIA CIENTÍFICA": [
     [
-     13,
-     14
+     23,
+     24
     ],
     [
-     15,
-     16
-    ],
-    [
-     19,
-     20
+     25,
+     26
     ]
    ],
    "MÉTODOS MATEMÁTICOS PARA EQUAÇÕES DIFERENCIAIS": [
     [
      11,
      12,
-     35,
-     36
+     43,
+     44
+    ],
+    [
+     9,
+     10,
+     41,
+     42
     ]
    ],
    "METROLOGIA": [
     [
-     8,
-     9,
-     53,
-     54
+     40,
+     41,
+     65,
+     66
     ],
     [
-     10,
-     11,
-     53,
-     54
+     42,
+     43,
+     65,
+     66
     ],
     [
-     32,
-     33,
-     53,
-     54
-    ],
-    [
-     34,
-     35,
-     53,
-     54
-    ],
-    [
-     44,
-     45,
-     53,
-     54
-    ],
-    [
-     46,
-     47,
-     53,
-     54
-    ],
-    [
-     53,
-     54,
      56,
-     57
+     57,
+     65,
+     66
     ],
     [
-     53,
-     54,
      58,
-     59
+     59,
+     65,
+     66
+    ],
+    [
+     24,
+     25,
+     65,
+     66
+    ],
+    [
+     26,
+     27,
+     65,
+     66
     ]
    ],
    "PLANEJAMENTO DE PROCESSOS DE FABRICAÇÃO": [
     [
-     23,
-     24,
-     47,
-     48
+     27,
+     28,
+     59,
+     60
     ]
    ],
    "PROBABILIDADE E ESTATÍSTICA PARA ENGENHARIA": [
     [
-     1,
-     2,
-     13,
-     14,
-     37,
-     38
-    ],
-    [
      3,
      4,
-     15,
-     16,
-     39,
-     40
-    ],
-    [
-     15,
-     16,
-     39,
-     40,
+     19,
+     20,
      51,
      52
     ]
    ],
+   "PROJETO FINAL DE CURSO I": [],
+   "PROJETO FINAL DE CURSO II": [],
+   "PROJETO INTEGRADOR EM PROCESSOS DE FABRICAÇÃO": [
+    [
+     37,
+     38
+    ]
+   ],
    "PROJETO INTEGRADOR EM RESOLVER PROBLEMAS": [
     [
-     15,
-     16
+     25,
+     26
     ]
    ],
    "PROJETO INTEGRADOR EM SISTEMAS MECÂNICOS": [
     [
-     45,
-     46
+     51,
+     52
     ]
    ],
    "PROJETO INTEGRADOR EM SISTEMAS TÉRMICOS": [
     [
-     11,
-     12
+     18,
+     19
+    ],
+    [
+     20,
+     21
     ]
    ],
    "QUÍMICA PARA ENGENHARIA": [
     [
-     9,
-     10,
-     33,
-     34
+     25,
+     26,
+     57,
+     58
     ],
     [
-     23,
-     24,
-     47,
-     48
+     27,
+     28,
+     59,
+     60
     ]
    ],
    "RESISTÊNCIA DOS MATERIAIS": [
     [
-     43,
-     44,
-     45,
      55,
      56,
-     57
+     57,
+     71,
+     72,
+     73
     ]
    ],
    "SÉRIES E EQUAÇÕES DIFERENCIAIS": [
     [
+     9,
+     10,
+     41,
+     42
+    ],
+    [
+     11,
+     12,
+     43,
+     44
+    ],
+    [
      7,
      8,
-     31,
-     32
+     39,
+     40
     ]
    ],
    "SISTEMAS TÉRMICOS": [
     [
-     19,
-     20,
-     43,
-     44
+     23,
+     24,
+     55,
+     56
     ]
    ],
    "SOLUÇÃO NUMÉRICA DE PROBLEMAS EM ENGENHARIA": [
     [
-     19,
-     20,
-     43,
-     44
+     27,
+     28,
+     59,
+     60
+    ],
+    [
+     23,
+     24,
+     55,
+     56
     ]
    ],
    "TERMODINÂMICA": [
     [
      7,
      8,
-     31,
-     32
+     39,
+     40
     ]
    ],
    "TRANSFERÊNCIA DE CALOR": [
     [
-     14,
-     15,
-     38,
-     39
+     18,
+     19,
+     50,
+     51
     ]
    ],
    "USINAGEM DOS MATERIAIS": [
     [
-     49,
-     50,
-     51,
-     55
+     65,
+     66,
+     67,
+     71
     ],
     [
-     49,
-     50,
-     51,
-     56
+     65,
+     66,
+     67,
+     72
     ],
     [
-     49,
-     50,
-     51,
-     58
+     65,
+     66,
+     67,
+     73
+    ],
+    [
+     65,
+     66,
+     67,
+     74
+    ]
+   ],
+   "VIBRAÇÃO EM SISTEMAS MECÂNICOS": [
+    [
+     4,
+     5,
+     6,
+     36
+    ],
+    [
+     4,
+     5,
+     6,
+     37
+    ],
+    [
+     4,
+     5,
+     6,
+     38
     ]
    ]
   }
  },
+ "turmas_rotulos": {
+  "1": {
+   "ADMINISTRAÇÃO E ORGANIZAÇÃO": [
+    "T01",
+    "T02"
+   ],
+   "ÁLGEBRA LINEAR": [
+    "T01",
+    "T02",
+    "T03"
+   ],
+   "AUTOMAÇÃO": [
+    "T01 - P01",
+    "T01 - P02",
+    "T01 - P03"
+   ],
+   "CÁLCULO I": [
+    "T01",
+    "T02",
+    "T03"
+   ],
+   "CÁLCULO II": [
+    "T01",
+    "T04"
+   ],
+   "CÁLCULO VETORIAL": [
+    "T02"
+   ],
+   "CONFORMAÇÃO MECÂNICA": [
+    "T01"
+   ],
+   "CONTROLE DE SISTEMAS DINÂMICOS": [
+    "T01 - P01",
+    "T01 - P02",
+    "T01 - P04"
+   ],
+   "DESENHO DE MÁQUINAS": [
+    "T01 - P01"
+   ],
+   "DESENHO TÉCNICO": [
+    "T05 - P05",
+    "T07 - P07"
+   ],
+   "DINÂMICA": [
+    "T01"
+   ],
+   "ELEMENTOS DE MÁQUINAS": [
+    "T01"
+   ],
+   "ERGONOMIA E SEGURANÇA DO TRABALHO": [
+    "T01"
+   ],
+   "ESTÁTICA": [
+    "T01"
+   ],
+   "FÍSICA I": [
+    "T01",
+    "T03",
+    "T04"
+   ],
+   "FÍSICA II": [
+    "T01",
+    "T02"
+   ],
+   "FÍSICA III": [
+    "T01",
+    "T02",
+    "T03"
+   ],
+   "FUNDAMENTOS DE MATEMÁTICA": [
+    "T03",
+    "T04"
+   ],
+   "FUNDIÇÃO E SOLDAGEM": [
+    "T01 - P01"
+   ],
+   "GEOMETRIA ANALÍTICA": [
+    "T04",
+    "T07",
+    "T08"
+   ],
+   "INTRODUÇÃO À CIÊNCIA DOS MATERIAIS": [
+    "T01 - P01",
+    "T02 - P02"
+   ],
+   "INTRODUÇÃO AOS PROJETOS MECÂNICOS": [
+    "P01"
+   ],
+   "INTRODUÇÃO ÀS ENGENHARIAS": [
+    "T05"
+   ],
+   "LABORATÓRIO DE FÍSICA I": [
+    "P04",
+    "P05",
+    "P08"
+   ],
+   "LABORATÓRIO DE FÍSICA II": [
+    "P03",
+    "P04",
+    "P05"
+   ],
+   "LABORATÓRIO DE MECÂNICA DOS FLUÍDOS": [
+    "P01",
+    "P02",
+    "P03"
+   ],
+   "LABORATÓRIO DE QUÍMICA": [
+    "P01",
+    "P02",
+    "P03"
+   ],
+   "MANUTENÇÃO MECÂNICA": [
+    "T01 - P01",
+    "T01 - P02",
+    "T01 - P03",
+    "T01 - P04"
+   ],
+   "MÁQUINAS TÉRMICAS II": [
+    "T01"
+   ],
+   "MECÂNICA DOS FLUÍDOS": [
+    "T01"
+   ],
+   "MECANISMOS MULTICORPOS": [
+    "T01"
+   ],
+   "MEIO AMBIENTE E SOCIEDADE": [
+    "T03",
+    "T05"
+   ],
+   "METODOLOGIA CIENTÍFICA": [
+    "T05"
+   ],
+   "MÉTODOS MATEMÁTICOS PARA EQUAÇÕES DIFERENCIAIS": [
+    "T01",
+    "T02"
+   ],
+   "METROLOGIA": [
+    "T01 - P01",
+    "T01 - P02"
+   ],
+   "MICROESTRUTURA E TRATAMENTO TÉRMICO DOS METAIS": [
+    "T01 - P01",
+    "T01 - P02",
+    "T01 - P03",
+    "T01 - P04",
+    "T01 - P05"
+   ],
+   "PLANEJAMENTO DE PROCESSOS DE FABRICAÇÃO": [
+    "T01"
+   ],
+   "PROBABILIDADE E ESTATÍSTICA PARA ENGENHARIA": [
+    "T01",
+    "T02",
+    "T03"
+   ],
+   "PROCESSOS DE FABRICAÇÃO POR USINAGEM": [
+    "T01 - P01",
+    "T01 - P02",
+    "T01 - P03"
+   ],
+   "PROJETO FINAL DE CURSO I": [],
+   "PROJETO FINAL DE CURSO II": [],
+   "PROJETO INTEGRADOR EM PROCESSOS DE FABRICAÇÃO": [
+    "P01"
+   ],
+   "PROJETO INTEGRADOR EM RESOLVER PROBLEMAS": [
+    "P01",
+    "P02"
+   ],
+   "PROJETO INTEGRADOR EM SISTEMAS MECÂNICOS": [
+    "P01",
+    "P02"
+   ],
+   "PROJETO INTEGRADOR EM SISTEMAS TÉRMICOS": [
+    "P01"
+   ],
+   "QUÍMICA PARA ENGENHARIA": [
+    "T05",
+    "T08"
+   ],
+   "REFRIGERAÇÃO E CONDICIONAMENTO DE AR": [
+    "T01 - P01",
+    "T01 - P02",
+    "T01 - P03"
+   ],
+   "SÉRIES E EQUAÇÕES DIFERENCIAIS": [
+    "T01",
+    "T02",
+    "T03"
+   ],
+   "SISTEMAS TÉRMICOS": [
+    "T01"
+   ],
+   "SOLUÇÃO NUMÉRICA DE PROBLEMAS EM ENGENHARIA": [
+    "T01 - P01",
+    "T02 - P02",
+    "T03 - P03"
+   ],
+   "TERMODINÂMICA": [
+    "T01"
+   ],
+   "TRANSFERÊNCIA DE CALOR": [
+    "T01"
+   ],
+   "USINAGEM DOS MATERIAIS": [
+    "T01 - P01",
+    "T01 - P02"
+   ],
+   "VIBRAÇÃO EM SISTEMAS MECÂNICOS": [
+    "T01 - P01",
+    "T01 - P02",
+    "T01 - P03"
+   ]
+  },
+  "2": {
+   "ADMINISTRAÇÃO E ORGANIZAÇÃO": [
+    "T01",
+    "T02"
+   ],
+   "ÁLGEBRA LINEAR": [
+    "T01",
+    "T02",
+    "T03",
+    "T04"
+   ],
+   "CÁLCULO I": [
+    "T01",
+    "T02",
+    "T04"
+   ],
+   "CÁLCULO II": [
+    "T01",
+    "T02",
+    "T03",
+    "T04"
+   ],
+   "CÁLCULO VETORIAL": [
+    "T01"
+   ],
+   "CINEMÁTICA": [
+    "T01"
+   ],
+   "COMPORTAMENTO MECÂNICO DOS MATERIAIS": [
+    "T01 - P01"
+   ],
+   "CONFORMAÇÃO MECÂNICA": [
+    "T01"
+   ],
+   "CONTROLE DE SISTEMAS DINÂMICOS": [
+    "T01 - P01",
+    "T01 - P02",
+    "T01 - P03",
+    "T01 - P04"
+   ],
+   "DESENHO DE MÁQUINAS": [
+    "T01 - P01"
+   ],
+   "DESENHO TÉCNICO": [
+    "T01 - P01",
+    "T02 - P02"
+   ],
+   "ELEMENTOS DE MÁQUINAS": [
+    "T01"
+   ],
+   "ENGENHARIA ECONÔMICA E GESTÃO DE PROJETOS": [
+    "T01"
+   ],
+   "ESTÁTICA": [
+    "T01"
+   ],
+   "FABRICAÇÃO ASSISTIDA POR COMPUTADOR": [
+    "T01 - P01",
+    "T01 - P02",
+    "T01 - P03"
+   ],
+   "FÍSICA I": [
+    "T04",
+    "T05",
+    "T06",
+    "T07"
+   ],
+   "FÍSICA II": [
+    "T01",
+    "T02"
+   ],
+   "FÍSICA III": [
+    "T02",
+    "T03",
+    "T04"
+   ],
+   "FUNDAMENTOS DE MATEMÁTICA": [
+    "T01",
+    "T02"
+   ],
+   "FUNDIÇÃO E SOLDAGEM": [
+    "T01 - P01"
+   ],
+   "GEOMETRIA ANALÍTICA": [
+    "T02",
+    "T03",
+    "T06",
+    "T07"
+   ],
+   "INSTRUMENTAÇÃO": [
+    "T01 - P01",
+    "T01 - P02",
+    "T01 - P03"
+   ],
+   "INTRODUÇÃO À CIÊNCIA DOS MATERIAIS": [
+    "T01 - P01",
+    "T02 - P02",
+    "T03 - P03",
+    "T04 - P04"
+   ],
+   "LABORATÓRIO DE FÍSICA I": [
+    "P01",
+    "P02"
+   ],
+   "LABORATÓRIO DE FÍSICA II": [
+    "P02"
+   ],
+   "LABORATÓRIO DE QUÍMICA": [
+    "P02",
+    "P09"
+   ],
+   "LABORATÓRIO DE RESISTÊNCIA DOS MATERIAIS": [
+    "T01 - P01",
+    "T01 - P02",
+    "T01 - P03",
+    "T01 - P04",
+    "T01 - P05"
+   ],
+   "LABORATÓRIO DE TRANSFERÊNCIA DE CALOR": [
+    "P01",
+    "P02",
+    "P03"
+   ],
+   "LÓGICA COMPUTACIONAL": [
+    "T01 - P01"
+   ],
+   "MÁQUINAS DE FLUXO": [
+    "T01 - P01",
+    "T01 - P02",
+    "T01 - P03"
+   ],
+   "MÁQUINAS TÉRMICAS I": [
+    "T01"
+   ],
+   "MATERIAIS APLICADOS À ENGENHARIA": [
+    "T01"
+   ],
+   "MECÂNICA DOS FLUÍDOS": [
+    "T01"
+   ],
+   "MEIO AMBIENTE E SOCIEDADE": [
+    "T02"
+   ],
+   "METODOLOGIA CIENTÍFICA": [
+    "T02",
+    "T03"
+   ],
+   "MÉTODOS MATEMÁTICOS PARA EQUAÇÕES DIFERENCIAIS": [
+    "T01",
+    "T02"
+   ],
+   "METROLOGIA": [
+    "T01 - P01",
+    "T01 - P02",
+    "T01 - P03",
+    "T01 - P04",
+    "T01 - P05",
+    "T01 - P06"
+   ],
+   "PLANEJAMENTO DE PROCESSOS DE FABRICAÇÃO": [
+    "T01"
+   ],
+   "PROBABILIDADE E ESTATÍSTICA PARA ENGENHARIA": [
+    "T03"
+   ],
+   "PROJETO FINAL DE CURSO I": [],
+   "PROJETO FINAL DE CURSO II": [],
+   "PROJETO INTEGRADOR EM PROCESSOS DE FABRICAÇÃO": [
+    "P01"
+   ],
+   "PROJETO INTEGRADOR EM RESOLVER PROBLEMAS": [
+    "P01"
+   ],
+   "PROJETO INTEGRADOR EM SISTEMAS MECÂNICOS": [
+    "P01"
+   ],
+   "PROJETO INTEGRADOR EM SISTEMAS TÉRMICOS": [
+    "P01",
+    "P02"
+   ],
+   "QUÍMICA PARA ENGENHARIA": [
+    "T02",
+    "T03"
+   ],
+   "RESISTÊNCIA DOS MATERIAIS": [
+    "T01"
+   ],
+   "SÉRIES E EQUAÇÕES DIFERENCIAIS": [
+    "T01",
+    "T03",
+    "T04"
+   ],
+   "SISTEMAS TÉRMICOS": [
+    "T01"
+   ],
+   "SOLUÇÃO NUMÉRICA DE PROBLEMAS EM ENGENHARIA": [
+    "T01 - P01",
+    "T03 - P03"
+   ],
+   "TERMODINÂMICA": [
+    "T01"
+   ],
+   "TRANSFERÊNCIA DE CALOR": [
+    "T01"
+   ],
+   "USINAGEM DOS MATERIAIS": [
+    "T01 - P01",
+    "T01 - P02",
+    "T01 - P03",
+    "T01 - P04"
+   ],
+   "VIBRAÇÃO EM SISTEMAS MECÂNICOS": [
+    "T01 - P01",
+    "T01 - P02",
+    "T01 - P03"
+   ]
+  }
+ },
  "grade": {
-  "aulas_por_dia": 12,
+  "aulas_por_dia": 16,
   "dias": [
    "Segunda",
    "Terça",
@@ -2815,12 +3665,30 @@
    [
     "17:40",
     "18:30"
+   ],
+   [
+    "19:00",
+    "19:50"
+   ],
+   [
+    "19:50",
+    "20:40"
+   ],
+   [
+    "21:00",
+    "21:50"
+   ],
+   [
+    "21:50",
+    "22:40"
    ]
   ],
   "pausas": {
    "3": "Intervalo",
    "6": "Almoço",
-   "9": "Intervalo"
+   "9": "Intervalo",
+   "12": "Jantar",
+   "14": "Intervalo"
   }
  }
 }

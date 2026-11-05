@@ -593,7 +593,7 @@ async function abrirGrade(indice) {
 function desenharGrade(destino = $('gradeTabela')) {
   const g = destino;
   g.replaceChildren();
-  const nAulas = CURSO.aulas.length;
+  const nAulas = GRADE.n_aulas || CURSO.aulas.length;   // noturnas só se houver turma à noite
   const dias = CURSO.dias;
   const pausas = CURSO.pausas;
   // linha da grade de cada aula (com linhas extras para intervalos/almoço)
@@ -638,7 +638,7 @@ function desenharGrade(destino = $('gradeTabela')) {
       const e = el('div', 'bloco', d.titulo);
       e.style.setProperty('--cor', CORES_GRADE_BORDA[d.cor]);
       e.style.setProperty('--fundo-cor', CORES_GRADE[d.cor]);
-      e.title = `${d.titulo} — turma ${d.escolhida + 1}`;
+      e.title = `${d.titulo} — ${d.turmas[d.escolhida].codigo || 'turma ' + (d.escolhida + 1)}`;
       pos(e, a, fim);
       a = fim + 1;
     }
