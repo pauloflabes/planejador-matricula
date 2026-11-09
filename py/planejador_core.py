@@ -261,18 +261,20 @@ _RE_PERIODOS = re.compile(r'(\d{4}/\d)\s(?: \n|\()')
 _RE_SPLIT_PERIODOS = re.compile(r'\d{4}/\d{1}  \n|\d{4}/\d{1} \(')
 # A situação vem logo após a nota (ou '-'); exigir um dígito, espaço ou '-'
 # antes evita confundir com finais de palavras como "MECÂNICA\n" ou "DRCA\n".
-_RE_SITUACAO = re.compile(r'(?<=[\d\s-])(' + SITUACOES + r')\n')
+_RE_SITUACAO = re.compile(r'(?<=[\d\s-])(' + SITUACOES + r')[ \t]*(?:\n|$)')
 _RE_CODIGO = re.compile(r'\d{4}\.\d{6}-\d{1}')
 _RE_SPLIT_CODIGO = re.compile(r'\d{4}\.\d{6}-\d{1} -')
 _RE_TURMA = re.compile(r'(P\d{2})|(T\d{2})|(OBR \d)|(OBR\d)|(ELE \d)|(OPT \d)|(ENC \d)')
-_RE_TIPO = re.compile(r'(OBR \d{2})|(OBR\d{2})|(ELE \d{2})|(OPT \d{2})|(ENC \d{2})')
+# Tipo e carga horária. Formato atual: números separados ("OBR 60 54 6 8,7 AP");
+# formato antigo: números colados ("OBR 6046140,8RN"), onde só os 2 primeiros são a CH.
+_RE_TIPO = re.compile(r'(OBR|ELE|OPT|ENC) ?(\d{2,3})(?=\s+[\d-])|(OBR|ELE|OPT|ENC) ?(\d{2})')
 # Os números da linha vêm colados (ex.: "OBR 6046140,8RN" = CH 60, presença 46,
 # faltas 14, nota 0,8). A nota é sempre "d,d" imediatamente antes da situação.
 # (Nota 10,0 seria lida como 0,0, o que é irrelevante: só a nota de RN é usada.)
-_RE_NOTA = re.compile(r'(\d,\d)\s*(?:' + SITUACOES + r')\n')
-_RE_CH_OBR = re.compile(r'obrigatórias cursadas \(Aprovadas ou dispensadas por análise curricular\) \d+ h/a (\d+)')
-_RE_CH_ELE = re.compile(r'Eletivas cursadas \(Aprovadas ou dispensadas por análise curricular\) \d+ h/a (\d+)')
-_RE_CH_EST = re.compile(r'Estágio Supervisionado Obrigatório \d+ h/a (\d+)')
+_RE_NOTA = re.compile(r'(\d,\d)\s*(?:' + SITUACOES + r')[ \t]*(?:\n|$)')
+_RE_CH_OBR = re.compile(r'obrigatórias cursadas \(Aprovadas ou dispensadas por análise curricular\):? \d+ h/a (\d+)')
+_RE_CH_ELE = re.compile(r'Eletivas cursadas \(Aprovadas ou dispensadas por análise curricular\):? \d+ h/a (\d+)')
+_RE_CH_EST = re.compile(r'Estágio Supervisionado Obrigatório:? \d+ h/a (\d+)')
 
 
 def ler_historico(caminho, progresso=None):
@@ -306,8 +308,9 @@ def ler_historico(caminho, progresso=None):
     res.estagio_concluido = bool(m and int(m.group(1)) >= CH_ESTAGIO_MIN)
 
     aprovadas, com_rm = [], []
-    n_paginas = len(textos)
-    for n_pag, texto in enumerate(textos):
+    # O texto é analisado inteiro (e não página a página) para que um semestre
+    # que continua na página seguinte não perca disciplinas.
+    for texto in ['\n'.join(textos)]:
         periodos = _RE_PERIODOS.findall(texto)
         trechos_periodo = _RE_SPLIT_PERIODOS.split(texto)[1:]
         for cont1, trecho_periodo in enumerate(trechos_periodo):
@@ -326,11 +329,10 @@ def ler_historico(caminho, progresso=None):
                 m_sit = _RE_SITUACAO.search(trecho)
                 if m_tipo is None or m_sit is None:
                     continue
-                tipo = trecho[m_tipo.start():m_tipo.start() + 3]
-                fim = m_tipo.end()
-                ch = int(trecho[fim - 2:fim])
-                if ch == 42:
-                    ch = 420                    # Estágio Supervisionado
+                tipo = m_tipo.group(1) or m_tipo.group(3)
+                ch = int(m_tipo.group(2) or m_tipo.group(4))
+                if ch == 42 and m_tipo.group(4):
+                    ch = 420                    # Estágio Supervisionado (formato antigo)
                 situacao = m_sit.group(1)
                 m_nota = _RE_NOTA.search(trecho)
                 nota = float(m_nota.group(1).replace(',', '.')) if m_nota else 0.0
@@ -352,8 +354,8 @@ def ler_historico(caminho, progresso=None):
                         res.ch_eletiva_lida += ch
                 if tipo == 'ELE' and situacao == 'MA':
                     res.ch_eletiva_total += ch
-        if progresso:
-            progresso(int((n_pag + 1) / n_paginas * 100))
+    if progresso:
+        progresso(100)
 
     if res.ano == 0:
         raise ErroLeitura('Nenhuma disciplina foi encontrada no histórico.')
@@ -376,9 +378,11 @@ def situacao_a_partir_da_leitura(curso, leitura):
         if not nomes:
             continue
         nome = nomes[0]
-        if any(e in aprovadas for e in equivalentes):
+        # o código atual da disciplina sempre vale, mesmo que não esteja na tabela
+        codigos = set(equivalentes) | {codigo_real}
+        if codigos & aprovadas:
             estados[nome] = APROVADA
-        elif any(e in com_rm for e in equivalentes):
+        elif codigos & com_rm:
             estados[nome] = RENDIMENTO_MIN
     ele = leitura.ch_eletiva_total
     if ele >= 120:
